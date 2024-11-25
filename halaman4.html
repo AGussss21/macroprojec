@@ -1,0 +1,123 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Healthy Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+      .dropdown-content {
+        display: none;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <div class="text-lg font-bold">
+          Healthy Life
+        </div>
+        <nav class="flex space-x-6">
+          <a class="text-green-700" href="#">Home</a>
+          
+          <!-- Dropdown Fitur -->
+          <div class="relative dropdown">
+            <a class="text-gray-700" href="#">Fitur <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-content absolute bg-white shadow-lg rounded-lg w-40 mt-2 z-10">
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Pelacak Jam Tidur</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Pelacak Langkah</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Resep Makanan</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Catatan Sehat</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Aktivitas Fisik</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Monitor Kesehatan</a>
+            </div>
+          </div>
+          
+          <a class="text-gray-700" href="#">Artikel</a>
+          <a class="text-gray-700" href="#">Pusat Bantuan</a>
+        </nav>
+        <div class="text-gray-700">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto mt-6 px-6">
+      <div class="flex items-center mb-6">
+        <!-- Button Back mengarah ke halaman1.html -->
+        <a href="halaman1.html" class="text-green-700 text-2xl">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1 class="text-2xl font-bold text-green-700 ml-4">
+          Rekomendasi Makan Malam
+        </h1>
+      </div>
+      
+      <div class="space-y-6">
+        <!-- Sup Krim Wortel -->
+        <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+          <img alt="A bowl of carrot cream soup" class="w-24 h-24 rounded-lg mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/lBFE43B4Xq4aO9IsqcI5oY0HVeTuVSBdbCGlXHARcWoiWU5JA.jpg" width="100"/>
+          <div class="flex-1">
+            <h2 class="text-xl font-bold text-green-700">
+              Sup krim wortel
+            </h2>
+            <p class="text-gray-700 mt-2">
+              wortel brastagi 2 buah dipotong-potong | Sup krim kemasan merek royco atau bebas | Air secukupnya sekitar 300 ml | Masukkan air kedalam panci, dan tuangkan sup krim kemasan lalu aduk hingga tercampur rata dengan air. siapkan panci terpisah untuk merebus wortel yang sudah di potong - potong kecil. setelah sudah matang bisa langsung tiriskan....
+            </p>
+            <a href="supkrimwortel.html" class="bg-green-700 text-white px-4 py-2 rounded mt-4 inline-block">
+              Klik Disini
+            </a>
+          </div>
+          <button class="text-gray-700 text-2xl ml-4">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+        </div>
+        
+        <!-- Chicken Katsu -->
+        <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+          <img alt="A plate of chicken katsu" class="w-24 h-24 rounded-lg mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/FQDzgdlUGe0fQEsVYditnDOWC0Wjr7niB5KNfcykwFzJaRlnA.jpg" width="100"/>
+          <div class="flex-1">
+            <h2 class="text-xl font-bold text-green-700">
+              Chicken katsu
+            </h2>
+            <p class="text-gray-700 mt-2">
+              150 gram tepung roti/panir (disarankan pakai yg warna orange ya agar cantik). Tapi pake merk Kobe juga boleh | 2 sdt bubuk kari | 2 sdt bubuk paprika | 2 sdt bubuk lada hitam | Bahan Utama | 2 kg dada ayam | 60 gram putih telur | 7-8 sdt kaldu jamur 4 sdt lada hitam peach | 4 sdt paprika bubuk...
+            </p>
+            <a href="chickenkatsu.html" class="bg-green-700 text-white px-4 py-2 rounded mt-4 inline-block">
+              Klik Disini
+            </a>
+          </div>
+          <button class="text-gray-700 text-2xl ml-4">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+        </div>
+
+        <!-- Bihun Kuah -->
+        <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+          <img alt="A bowl of bihun kuah" class="w-24 h-24 rounded-lg mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/ep8z3zxxzo3dGqr54mRaKw8blnBdeeqaK8CBBRHjrhLGaRlnA.jpg" width="100"/>
+          <div class="flex-1">
+            <h2 class="text-xl font-bold text-green-700">
+              Bihun kuah
+            </h2>
+            <p class="text-gray-700 mt-2">
+              1 Bungkus bihun | 2 ons jamur/ optional bisa diganti jamur atau sayur lain | 2 butir telur | 2 buah sosis | 3 siung bawang putih | Sejumput merica | Garam dan penyedap. Haluskan bawang putih dan merica...
+            </p>
+            <a href="bihunkuah.html" class="bg-green-700 text-white px-4 py-2 rounded mt-4 inline-block">
+              Klik Disini
+            </a>
+          </div>
+          <button class="text-gray-700 text-2xl ml-4">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Healthy Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <div class="text-lg font-bold">
+          Healthy Life
+        </div>
+        <nav class="flex space-x-6 relative items-center">
+          <a class="text-green-600" href="#">
+            Home
+          </a>
+
+          <!-- Fitur with Dropdown -->
+          <div class="relative">
+            <button id="dropdownButton" class="text-gray-600 font-semibold flex items-center">
+              Fitur <i class="fas fa-chevron-down ml-1"></i>
+            </button>
+            <!-- Dropdown Menu -->
+            <div id="dropdownMenu" class="absolute hidden bg-white shadow-lg rounded-lg w-40 mt-2 z-10">
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Pelacak Jam Tidur</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Pelacak Langkah</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Resep Makanan</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Catatan Sehat</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Aktivitas Fisik</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Monitor Kesehatan</a>
+            </div>
+          </div>
+
+          <a class="text-gray-600" href="#">
+            Artikel
+          </a>
+          <a class="text-gray-600" href="#">
+            Pusat Bantuan
+          </a>
+        </nav>
+        <div class="text-gray-600">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto mt-6 px-6">
+      <div class="flex items-center mb-4">
+        <button class="text-green-600 text-2xl" onclick="window.location.href='halaman1.html'">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <h1 class="text-3xl font-bold text-green-700 ml-4">
+          Rekomendasi Makan Siang
+        </h1>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-white shadow-md rounded-lg p-4 border-2 border-blue-500">
+          <div class="flex">
+            <img alt="A dish of broccoli and chicken" class="w-24 h-24 rounded-lg mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/yMD5mr1Lcu4YIFC4gqPshFsAfuCa1wbuomN0Y30sFFkRtT5JA.jpg" width="100"/>
+            <div class="flex-1">
+              <h2 class="text-xl font-bold text-green-700">
+                Tumis Brokoli Ayam
+              </h2>
+              <p class="text-gray-700 mt-2">
+                250 gr daging ayam | 150 gr brokoli | 4 siung bawang merah | 3 siung bawang putih | 3 sdm saus tiram | ½ sdt lada | 1 sdt kaldu ayam | Garam | Gula | Cuci bersih daging ayam dan potong dadu. Cuci bersih brokoli dan potong sesuai selera. Haluskan bawang putih dan bawang merah...
+              </p>
+              <button class="mt-4 bg-green-600 text-white py-2 px-4 rounded" onclick="window.location.href='tumisbrokoli.html'">
+                Klik Disini
+              </button>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-plus-circle text-2xl text-gray-600"></i>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-4">
+          <div class="flex">
+            <img alt="A dish of teriyaki chicken" class="w-24 h-24 rounded-lg mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/8iI0Ar9OrRbmINWJlILz3GZVHx1QwVmhudgAza1uaK6p2p8E.jpg" width="100"/>
+            <div class="flex-1">
+              <h2 class="text-xl font-bold text-green-700">
+                Ayam Teriyaki
+              </h2>
+              <p class="text-gray-700 mt-2">
+                200 gram dada ayam potong dadu | 100 gram jamur King Oyster | 100 gram Red Bell Pepper atau Paprika Merah (1 buah) | 1/2 bawang bombay | 3 siung bawang putih | 2 siung bawang merah | 1 sdt kaldu jamur | 1 sdt lada hitam bubuk | 1 sdt bubuk paprika | 1 sachet dietabetasol | 25 gram Saori saus teriyaki | Secukupnya air putih untuk menumis...
+              </p>
+              <button class="mt-4 bg-green-600 text-white py-2 px-4 rounded" onclick="window.location.href='ayamteriyaki.html'">
+                Klik Disini
+              </button>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-plus-circle text-2xl text-gray-600"></i>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-4">
+          <div class="flex">
+            <img alt="A dish of fried spiced chicken" class="w-24 h-24 rounded-lg mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/KVcWZmiQLuooM1kklj7bIra28yRdghZpegL6IV35CGtQtT5JA.jpg" width="100"/>
+            <div class="flex-1">
+              <h2 class="text-xl font-bold text-green-700">
+                Ayam Goreng Rempah
+              </h2>
+              <p class="text-gray-700 mt-2">
+                160 gram paha ayam | 2 batang serai, potong potong | 1 sdt kunyit bubuk | 2 sdt ketumbar | 2 siung bawang merah, 1,2 siung bawang putih | Secukupnya Lada | 2 sdt bubuk go hiong. Potong ayam, bumbui dengan bumbu diatas...
+              </p>
+              <!-- Mengubah link tombol agar mengarah ke halaman ayamgoreng.html -->
+              <button class="mt-4 bg-green-600 text-white py-2 px-4 rounded" onclick="window.location.href='ayamgoreng.html'">
+                Klik Disini
+              </button>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-plus-circle text-2xl text-gray-600"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      // JavaScript to handle dropdown toggle
+      const dropdownButton = document.getElementById('dropdownButton');
+      const dropdownMenu = document.getElementById('dropdownMenu');
+
+      // Toggle the dropdown visibility when button is clicked
+      dropdownButton.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('hidden');
+      });
+
+      // Close the dropdown if clicked outside
+      window.addEventListener('click', (event) => {
+        if (!event.target.closest('#dropdownButton') && !event.target.closest('#dropdownMenu')) {
+          dropdownMenu.classList.add('hidden');
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Healthy Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+      .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+        <div class="text-lg font-bold">
+          Healthy Life
+        </div>
+        <nav class="flex space-x-6 relative items-center">
+          <a class="text-green-600" href="#">Home</a>
+          
+          <!-- Fitur with Dropdown -->
+          <div class="relative">
+            <button id="dropdownButton" class="text-gray-600 flex items-center">
+              Fitur
+              <i class="fas fa-chevron-down ml-1"></i>
+            </button>
+            <!-- Dropdown Menu -->
+            <div id="dropdownMenu" class="absolute hidden bg-white shadow-lg rounded-lg w-40 mt-2 z-10">
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Pelacak Jam Tidur</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Pelacak Langkah</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Resep Makanan</a>
+              <!-- Link to catatankesehatan.html -->
+              <a href="catatankesehatan.html" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Catatan Sehat</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Aktivitas Fisik</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Monitor Kesehatan</a>
+            </div>
+          </div>
+
+          <a class="text-gray-600" href="#">Artikel</a>
+          <a class="text-gray-600" href="#">Pusat Bantuan</a>
+        </nav>
+        <div class="text-gray-600">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+      <div class="flex justify-start mb-4">
+        <button class="text-green-600 text-2xl">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+      </div>
+      <h1 class="text-center text-3xl font-bold text-green-700 mb-8">
+        Resep Makanan Sehat
+      </h1>
+
+      <!-- Card Grid with hover effects -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="card bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all">
+          <img alt="Sandwich on a wooden board" class="w-full rounded-lg shadow-md mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/AtiTDXgoT4YFIFFLSCJpkeimbv5a2hv877YNt6BzW28y5H5JA.jpg" width="300"/>
+          <a href="halaman2.html" class="bg-green-700 text-white py-2 px-4 rounded-full inline-block w-full text-center">
+            Sarapan
+          </a>
+        </div>
+
+        <div class="card bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all">
+          <img alt="Fried chicken on a plate" class="w-full rounded-lg shadow-md mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/ieiqRwgqQhSJNSueNcAPvJiXhFA84xlNEbG4fTAtSkGHnfIPB.jpg" width="300"/>
+          <a href="halaman3.html" class="bg-green-700 text-white py-2 px-4 rounded-full block w-full text-center">
+            Makan Siang
+          </a>
+        </div>
+
+        <div class="card bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all">
+          <img alt="Dinner table with various dishes" class="w-full rounded-lg shadow-md mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/G2QE5vY9ZFaxK9g0iyrzINTePRffRsW2Dw0FtFsv0gYDnfIPB.jpg" width="300"/>
+          <!-- Tombol Makan Malam sekarang mengarah ke halaman4.html -->
+          <a href="halaman4.html" class="bg-green-700 text-white py-2 px-4 rounded-full block w-full text-center">
+            Makan Malam
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-white py-4">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-gray-600">
+          © 2024 Healthy Life. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Dropdown Toggle Script -->
+    <script>
+      const dropdownButton = document.getElementById('dropdownButton');
+      const dropdownMenu = document.getElementById('dropdownMenu');
+
+      // Toggle the dropdown visibility when button is clicked
+      dropdownButton.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('hidden');
+      });
+
+      // Close the dropdown if clicked outside
+      window.addEventListener('click', (event) => {
+        if (!event.target.closest('#dropdownButton') && !event.target.closest('#dropdownMenu')) {
+          dropdownMenu.classList.add('hidden');
+        }
+      });
+    </script>
+  </body>
+</html>

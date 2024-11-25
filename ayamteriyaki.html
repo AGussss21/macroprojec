@@ -1,0 +1,131 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Resep Ayam Teriyaki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <header class="flex justify-between items-center p-4 border-b">
+      <div class="text-lg font-bold">
+        Healthy Life
+      </div>
+      <nav class="flex space-x-4 relative items-center">
+        <!-- Mengubah href Home agar kembali ke halaman1.html -->
+        <a class="text-green-600" href="halaman1.html">
+          Home
+        </a>
+
+        <!-- Fitur with Dropdown -->
+        <div class="relative">
+          <button id="dropdownButton" class="text-gray-600 font-semibold flex items-center">
+            Fitur <i class="fas fa-chevron-down ml-1"></i>
+          </button>
+          <!-- Dropdown Menu -->
+          <div id="dropdownMenu" class="absolute hidden bg-white shadow-lg rounded-lg w-40 mt-2 z-10">
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Pelacak Jam Tidur</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Pelacak Langkah</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Resep Makanan</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Catatan Sehat</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Aktivitas Fisik</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-white hover:text-green-600">Monitor Kesehatan</a>
+          </div>
+        </div>
+
+        <a href="#" class="text-gray-600">
+          Artikel
+        </a>
+        <a href="#" class="text-gray-600">
+          Pusat Bantuan
+        </a>
+      </nav>
+      <div class="text-2xl">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main class="p-8">
+      <div class="flex items-center mb-4">
+        <!-- Tombol Back dengan event onclick untuk kembali ke halaman sebelumnya -->
+        <button onclick="window.location.href='halaman3.html'" class="text-2xl text-green-600">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <h1 class="text-2xl font-bold ml-4">
+          Resep Ayam Teriyaki
+        </h1>
+      </div>
+
+      <div class="border-2 border-blue-400 p-4 flex">
+        <img alt="Ayam Teriyaki" class="w-1/2 h-auto" height="300" src="https://storage.googleapis.com/a1aa/image/8iI0Ar9OrRbmINWJlILz3GZVHx1QwVmhudgAza1uaK6p2p8E.jpg" width="300"/>
+        <div class="ml-4 w-1/2">
+          <h2 class="text-xl font-bold text-green-700 mb-2">
+            Resep Ayam Teriyaki
+          </h2>
+          <ul class="list-decimal list-inside mb-4">
+            <li>200 gram dada ayam, potong dadu</li>
+            <li>100 gram jamur King Oyster, iris</li>
+            <li>100 gram paprika merah, iris</li>
+            <li>½ bawang bombay, iris</li>
+            <li>3 siung bawang putih, cincang</li>
+            <li>2 siung bawang merah, iris</li>
+            <li>1 sdt kaldu jamur</li>
+            <li>1 sdt lada hitam bubuk</li>
+            <li>1 sdt bubuk paprika</li>
+            <li>1 sachet dietabetasol</li>
+            <li>25 gram Saori saus teriyaki</li>
+            <li>Secukupnya air putih untuk menumis</li>
+          </ul>
+          <ol class="list-decimal list-inside mb-4">
+            <li>Potong ayam dan bahan lainnya sesuai ukuran yang diinginkan.</li>
+            <li>Panaskan sedikit minyak, tumis bawang putih, bawang merah, dan bawang bombay hingga harum.</li>
+            <li>Tambahkan ayam dan masak hingga ayam berubah warna.</li>
+            <li>Masukkan jamur, paprika, kaldu jamur, lada hitam, bubuk paprika, dan dietabetasol, aduk rata.</li>
+            <li>Tambahkan Saori saus teriyaki dan sedikit air, masak hingga ayam matang dan bumbu meresap.</li>
+            <li>Sajikan ayam teriyaki dengan nasi putih hangat.</li>
+          </ol>
+          <div class="bg-gray-100 p-4 rounded">
+            <h3 class="font-bold mb-2">
+              Ringkasan kalori
+            </h3>
+            <p>Lemak: 10.00g</p>
+            <p>Lemak Jenuh: 2.000g</p>
+            <p>Lemak Tak Jenuh Ganda: 3.500g</p>
+            <p>Lemak Tak Jenuh Tunggal: 7.000g</p>
+            <p>Kolesterol: 75mg</p>
+            <p>Protein: 30.00g</p>
+            <p>Karbohidrat: 10.00g</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-right text-green-700 text-xl font-bold mt-4">
+        350 Kal
+        <i class="fas fa-plus-circle"></i>
+      </div>
+    </main>
+
+    <script>
+      // JavaScript to handle dropdown toggle
+      const dropdownButton = document.getElementById('dropdownButton');
+      const dropdownMenu = document.getElementById('dropdownMenu');
+
+      // Toggle the dropdown visibility when button is clicked
+      dropdownButton.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('hidden');
+      });
+
+      // Close the dropdown if clicked outside
+      window.addEventListener('click', (event) => {
+        if (!event.target.closest('#dropdownButton') && !event.target.closest('#dropdownMenu')) {
+          dropdownMenu.classList.add('hidden');
+        }
+      });
+    </script>
+  </body>
+</html>

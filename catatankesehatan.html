@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Life - Catatan Sehat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f8f8;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <header class="flex justify-between items-center p-6 bg-green-700 text-white shadow-lg">
+    <div class="text-2xl font-bold">Healthy Life</div>
+    <nav class="flex space-x-6">
+      <a class="hover:text-green-300 transition" href="#">Home</a>
+      <div class="relative">
+        <button class="flex items-center space-x-1 hover:text-green-300 transition">
+          <span>Fitur</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+      <a href="#" class="hover:text-green-300 transition">Artikel</a>
+      <a href="#" class="hover:text-green-300 transition">Pusat Bantuan</a>
+    </nav>
+    <div>
+      <i class="fas fa-bars text-xl cursor-pointer"></i>
+    </div>
+  </header>
+
+  <main class="p-6">
+    <div class="flex items-center space-x-2 mb-6">
+      <i class="fas fa-arrow-left text-2xl text-green-700"></i>
+      <h1 class="text-3xl font-bold text-green-700">Catatan Sehat</h1>
+    </div>
+
+    <div class="flex justify-end items-center mb-6">
+      <h1 class="text-2xl font-bold text-green-700">RENCANA</h1>
+      <i class="fas fa-clipboard-list text-2xl text-green-700 ml-2"></i>
+    </div>
+
+    <!-- Grid Layout for Week Days (without Sunday) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-6">
+      <!-- Target Column -->
+      <div class="bg-green-700 text-white rounded-lg shadow-lg p-4">
+        <div class="text-center font-bold">Target</div>
+        <div class="flex flex-col items-center justify-center mt-4">
+          <img alt="Icon of vegetables" class="mb-4 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/yHyuWeB2CJShdypnX1uvUDWZev9RHELZ2OfnmPZ9V3dgTSlnA.jpg" width="50"/>
+          <div>Banyak Sayur</div>
+        </div>
+        <div class="mt-4 space-y-2">
+          <div class="border border-gray-300 h-16 rounded-lg"></div>
+          <div class="border border-gray-300 h-16 rounded-lg"></div>
+          <div class="border border-gray-300 h-16 rounded-lg"></div>
+          <div class="border border-gray-300 h-16 rounded-lg"></div>
+          <div class="border border-gray-300 h-16 rounded-lg"></div>
+        </div>
+      </div>
+
+      <!-- Monday - Saturday Cards -->
+      <div class="bg-white shadow-lg rounded-lg">
+        <div class="bg-green-700 text-white p-4 text-center font-bold">Monday</div>
+        <div class="p-4">
+          <div class="border-b p-2">Serapan: Salad</div>
+          <div class="border-b p-2">Siang: Sayur Bayam</div>
+          <div class="p-2">Malam: Kentang Rebus</div>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg">
+        <div class="bg-green-700 text-white p-4 text-center font-bold">Tuesday</div>
+        <div class="p-4">
+          <div class="border-b p-2">Serapan: Salad</div>
+          <div class="border-b p-2">Siang: Sayur Bayam</div>
+          <div class="p-2">Malam: Kentang Rebus</div>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg">
+        <div class="bg-green-700 text-white p-4 text-center font-bold">Wednesday</div>
+        <div class="p-4 flex items-center justify-center">
+          <div class="font-semibold">Cheat Day!!!</div>
+          <i class="fas fa-star text-yellow-500 ml-2"></i>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg">
+        <div class="bg-green-700 text-white p-4 text-center font-bold">Thursday</div>
+        <div class="p-4">
+          <div class="border-b p-2">Serapan: Salad</div>
+          <div class="border-b p-2">Siang: Sayur Bayam</div>
+          <div class="p-2">Malam: Kentang Rebus</div>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg">
+        <div class="bg-green-700 text-white p-4 text-center font-bold">Friday</div>
+        <div class="p-4">
+          <div class="border-b p-2">Serapan: Salad</div>
+          <div class="border-b p-2">Siang: Sayur Bayam</div>
+          <div class="p-2">Malam: Kentang Rebus</div>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg">
+        <div class="bg-green-700 text-white p-4 text-center font-bold">Saturday</div>
+        <div class="p-4">
+          <div class="border-b p-2">Serapan: Salad</div>
+          <div class="border-b p-2">Siang: Sayur Bayam</div>
+          <div class="p-2">Malam: Kentang Rebus</div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
